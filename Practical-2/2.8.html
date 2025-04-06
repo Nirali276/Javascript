@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime Numbers</title>
+</head>
+<body>
+    <script>
+        var n = parseInt(prompt("Enter the number: "));
+       var n1 = n,sum=0;
+        
+        while (n!=0) {
+           var t=n%10;
+            sum=sum+(t**3);
+            n=parseInt(n/10);
+        }
+
+        if (sum==n1)
+        {
+            document.write(n1 + " is amstrong");
+        }
+        
+        else
+        {
+            document.write(n1 + " not a amstrong");
+        }
+    </script>
+</body>
+</html>
