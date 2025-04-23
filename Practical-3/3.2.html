@@ -24,3 +24,32 @@
     </script>
 </body>
 </html>
+
+//with using recursion
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function fibonacci(n){
+            if(n<=1)
+            return n;
+        return fibonacci(n-1)+fibonacci(n-2);
+        }
+        var num=parseInt(prompt("Enter a number:"));
+        if(isNaN(num)|| num<0){
+            document.write("Please enter a valid non negative number:");
+        }
+        else{
+            document.write("fibonacci series:");
+            for (var i=0;i<num;i++){
+                document.write(fibonacci(i)+" ");
+            }
+        }
+    </script>
+</body>
+</html>
