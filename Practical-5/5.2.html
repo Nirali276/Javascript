@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let message = "Hello, JavaScript!";
+        document.write("Original string:", message,"<br>");
+
+        document.write("charAt(7):", message.charAt(7),"<br>");
+
+        let newMessage = message.concat(" It's powerful.");
+        document.write("After concat():", newMessage,"<br>");
+
+        let replacedMessage = message.replace("JavaScript", "World");
+        document.write("After replace():", replacedMessage,"<br>");
+
+        let sliced = message.slice(7, 17);
+        document.write("slice(7, 17):", sliced,"<br>");
+
+        document.write("toLowerCase():", message.toLowerCase(),"<br>");
+
+        document.write("toUpperCase():", message.toUpperCase(),"<br>");
+
+        let subStr = message.substring(7, 17);
+        document.write("substring(7, 17):", subStr,"<br>");
+
+    </script>
+</body>
+</html>
